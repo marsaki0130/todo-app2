@@ -86,6 +86,8 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    erb2haml (0.1.5)
+      html2haml
     erubi (1.10.0)
     erubis (2.7.0)
     ffi (1.15.4)
@@ -248,6 +250,7 @@ DEPENDENCIES
   byebug
   capybara (>= 3.26)
   devise
+  erb2haml
   hamlit-rails
   html2haml
   jbuilder (~> 2.7)
