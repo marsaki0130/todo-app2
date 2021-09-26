@@ -1,0 +1,64 @@
+@import 'variables';
+
+.container{
+    h2 {
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 36px;
+        color: #000000;
+        margin-top: 33px;
+        margin-bottom: 33px;
+    }
+    
+    .name {
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        /* identical to box height */
+    
+    
+        color: #000000;
+    }
+    
+    .text{
+        width: 362px;
+        height: 40px;
+        // left: 26px;
+        // right: 26px;
+        // top: 190px;
+        margin-top: 8px;
+        margin-bottom: 33px;
+    
+        background: #F4F4F4;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .btn-primary{
+        position: absolute;
+        width: 60px;
+        height: 25px;
+        margin-bottom: 32px;
+    
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 25px;
+    
+    
+        color: #FFFFFF;
+    
+        width: 362px;
+        height: 40px;
+        top: 800px;
+    
+        background: #F8BD1C;
+        border-radius: 4px;
+        border: none;
+    }
+}
