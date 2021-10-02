@@ -1,0 +1,58 @@
+@import 'variables';
+$heart-size: 16px;
+$avatar-size: 32px;
+
+.card{
+    // board全体
+    background-color: $base-box-color;
+    border: 1px dashed rgba(0,0,0,0.2);  
+    margin: 16px auto;
+    cursor: pointer;
+    height: 350px;
+    width: 90%;
+    border-radius: 10px;
+
+    // カードタイトル
+    &_name{
+        color: $text-base-color;
+        font-size: 22px;
+        padding: 16px 16px;
+    }
+
+    // カードdescription
+    &_description{
+        padding: 24px 0 32px;
+        display: -webkit-box;
+        -webkit-line-clamp: 8;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        opacity: 0.4;
+    }
+
+}
+
+// add new boardの文字
+
+
+.card_add{
+    position: relative;
+    background-color: white;
+    
+    margin: 16px auto;
+    cursor: pointer;
+    height: 160px;
+    width: 90%;
+    border-radius: 10px;
+    border-style: dashed;
+  
+    a{
+      position: absolute;
+      color: $text-base-color;
+      top: 50%;
+      left: 50%;
+      -webkit-transform : translate(-50%,-50%);
+      transform : translate(-50%,-50%);
+      display: block;
+    }
+  }  
+

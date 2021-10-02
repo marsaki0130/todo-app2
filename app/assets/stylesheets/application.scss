@@ -1,5 +1,8 @@
 @import 'variables';
 @import 'common';
+@import 'card';
+@import 'header';
+@import 'flash';
 
 html {
     word-spacing: 1px;
@@ -27,5 +30,10 @@ html {
   .container {
     padding: 16px 16px;
     width: 100%;
+  }
+
+  a{
+    text-decoration: none;
+    color: $text-base-color;
   }
   
