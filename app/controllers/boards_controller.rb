@@ -18,6 +18,12 @@ class BoardsController < ApplicationController
   end
 
 
+  def show
+    @board = Board.find(params[:id])
+    # /boards/:id(.:format)
+  end
+
+
   private
 
   def board_params

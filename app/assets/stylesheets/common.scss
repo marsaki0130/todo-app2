@@ -75,3 +75,51 @@
         border: none;
     }
 }
+
+.dropbtn {
+    border: none;
+  }
+  
+  .dropdown {
+    position: absolute;
+    // display: inline-block;
+    right: 50px;
+    top: 160px;
+    // margin-right: 0px;
+    // margin-top: 0px;
+    display: flex;
+  }
+  
+  .dropdown-content {
+    font-weight: normal;
+    display: none;
+    right: 0;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+  &.mini {
+    min-width: 100px;
+  }
+  }
+  
+
+  .dropdown-content a {
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    color: $text-base-color;
+    font-size:16px;
+  }
+  
+ 
+
+  .dropdown-content a:hover {
+    background-color: white;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
