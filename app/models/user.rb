@@ -9,4 +9,5 @@ class User < ApplicationRecord
   end
 
   has_many :boards, dependent: :destroy
+  has_many :tasks, dependent: :destroy
 end
