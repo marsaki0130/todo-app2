@@ -1,14 +1,15 @@
 class BoardsController < ApplicationController
+  # before_action :authenticate_user!
   def index
     @boards = Board.all
   end
 
   def new
-    @board = Board.new
+    @board = current_user.boards.build
   end
 
   def create
-    @board = Board.create(board_params)
+    @board = current_user.boards.build(board_params)
     if @board.save
       redirect_to root_path, notice: '保存できました'
     else
@@ -36,6 +37,12 @@ class BoardsController < ApplicationController
       flash.now[:error] = '更新できませんでした'
       render :edit
     end
+  end
+
+  def destroy
+    board = Board.find(params[:id])
+    board.destroy!
+    redirect_to root_path, notice:'削除できました'
   end
 
 
