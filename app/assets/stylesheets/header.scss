@@ -27,6 +27,7 @@ $back-icon-size: 16px;
 
 .header {
     display: flex;
+    position: relative;
     justify-content: space-between;
     padding: 20px 20px 20px 10px;
     font-weight: bold;
@@ -67,6 +68,7 @@ $back-icon-size: 16px;
         height: $avatar-size;
         border-radius: 100%;
       }
+
 }
 
 
