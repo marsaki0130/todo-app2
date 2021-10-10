@@ -23,8 +23,9 @@ class TasksController < ApplicationController
     end
 
     def show
-        board = Board.find(params[:board_id])
-        @task = current_user.tasks.build
+        @task = Task.find(params[:id])
+        @board = @task.board
+        # @task.user_id = current_user.id
     end
 
 

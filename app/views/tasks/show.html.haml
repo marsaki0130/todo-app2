@@ -1,1 +1,11 @@
-<p>show</p>
+.container
+  %p.header_text
+  .border_line
+  .card
+    %h2= @task.title
+    %p= @task.content
+    .dropdown
+      = image_tag 'actions.svg', class: 'dropbtn'
+      .dropdown-content.mini
+        = link_to '編集' , edit_board_task_path(@task,@board)
+        = link_to '削除' , board_task_path(@board,@task), data: { method: 'delete' , confirm: '本当に削除してもよろしいですか？' }
