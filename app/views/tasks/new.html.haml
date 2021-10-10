@@ -2,17 +2,17 @@
   %p.header_text
   .border_line
   %h2 New Card
-  = form_with(model: @board,url: boards_path, method: 'post',local: true) do |f| 
+  = form_with(model: @task,url: board_tasks_path(@task.board), method: 'post',local: true) do |f| 
     %div
       = f.label :eyecatch, 'アイキャッチ'
     %div
       = f.file_field :eyecatch
     %div
-      = f.label :name, 'タイトル'
+      = f.label :title, 'タイトル'
     %div
-      = f.text_field :name, class: 'text'
+      = f.text_field :title, class: 'text'
     %div
-      = f.label :description, '概要'
+      = f.label :content, '概要'
     %div
-      = f.text_area :description, class: 'board-area'
+      = f.text_area :content, class: 'board-area'
     = f.submit '保存' ,class: 'btn-primary'
