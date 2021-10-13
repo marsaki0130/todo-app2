@@ -9,3 +9,12 @@
       .dropdown-content.mini
         = link_to '編集' , edit_board_task_path(@task,@board)
         = link_to '削除' , board_task_path(@board,@task), data: { method: 'delete' , confirm: '本当に削除してもよろしいですか？' }
+ 
+  %h2 コメント一覧
+  - @comments.each do |comment|
+    = link_to new_task_comment_path(@board,@task) do
+      .comment
+        %p= comment.content
+
+  .card_add
+    = link_to '+ Add new comment ', new_task_comment_path(@task)
