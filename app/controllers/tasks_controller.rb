@@ -1,5 +1,6 @@
 class TasksController < ApplicationController
-
+    before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+    
     def index
         @tasks = Task.all
     end
@@ -25,7 +26,7 @@ class TasksController < ApplicationController
     def show
         @task = Task.find(params[:id])
         @board = @task.board
-        # @task.user_id = current_user.id
+        @comments = @task.comments
     end
 
     def edit

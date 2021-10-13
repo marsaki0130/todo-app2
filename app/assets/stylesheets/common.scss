@@ -124,3 +124,16 @@
   .article{
     padding: 10px;
   }
+
+  
+  .comment{
+
+    display: flex;
+    margin-bottom: 10px;
+  
+  
+  &_content{
+  font-size: 16px;
+    padding: 38px;
+  }
+}
