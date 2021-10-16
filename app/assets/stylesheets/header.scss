@@ -64,6 +64,7 @@ $back-icon-size: 16px;
       }
     
       &_avatar {
+        cursor: pointer;
         width: $avatar-size;
         height: $avatar-size;
         border-radius: 100%;

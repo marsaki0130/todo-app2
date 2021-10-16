@@ -8,6 +8,3 @@
           = link_to 'Edit', edit_profile_path
       .profilePage_user_introduction
         = current_user.profile&.introduction
-
-- current_user.boards.each do |board|
-  = render 'commons/board', board: board

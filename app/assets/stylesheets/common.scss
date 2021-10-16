@@ -76,64 +76,86 @@
     }
 }
 
+// 編集、削除のdropdown
+
 .dropbtn {
-    border: none;
-  }
-  
-  .dropdown {
-    position: absolute;
-    right: 50px;
-    top: 160px;
-    display: flex;
-  }
-  
-  .dropdown-content {
-    font-weight: normal;
-    display: none;
-    right: 0;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  left: 260px;
+  bottom: 110px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  font-weight: normal;
+  display: none;
+  right: 0;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 
   &.mini {
-    min-width: 100px;
+      min-width: 100px;
   }
-  }
-  
+}
 
-  .dropdown-content a {
-    padding: 8px 16px;
-    text-decoration: none;
-    display: block;
-    color: $text-base-color;
-    font-size:16px;
-  }
-  
- 
+.dropdown-content a {
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  color: $text-base-color;
+}
 
-  .dropdown-content a:hover {
-    background-color: white;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+.dropdown-content a:hover {
+  background-color: white;
+}
 
-  .article{
-    padding: 10px;
-  }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-  
-  .comment{
 
-    display: flex;
-    margin-bottom: 10px;
-  
-  
-  &_content{
-  font-size: 16px;
-    padding: 38px;
+
+
+//↓プロフィールのdropdown
+
+.dropdown_icon {
+  position: relative;
+  right:10px;
+  display: inline-block;
+}
+
+.dropdown-content_icon {
+  font-weight: normal;
+  display: none;
+  right: 0;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+  &.mini {
+      min-width: 100px;
   }
+}
+
+.dropdown-content_icon a {
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  color: $text-base-color;
+}
+
+.dropdown-content_icon a:hover {
+  background-color: white;
+}
+
+.dropdown_icon:hover .dropdown-content_icon {
+  display: block;
 }
